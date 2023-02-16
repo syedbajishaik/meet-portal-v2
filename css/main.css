@@ -12,6 +12,7 @@
     --white-color: white;
     --list-hover-color: #f5f5f5;
     --border-color: #cacaca;
+    --lightgray-color: #fbfbfb;
 }
 
 @font-face {
@@ -156,7 +157,7 @@ body {
 }
 
 .color-black {
-    color: #000000;
+    color: #000000 !important;
 }
 
 .color-white {
@@ -1270,9 +1271,20 @@ body.mployee-view .edm-title .form-group .form-control {
 body.mployee-view .edm-title .form-group>span.has-icon i.con {
     color: #000000;
 }
-
+body.mployee-view .edm-container .accordion-group{
+    border: solid 1px #CDCDCD;
+}
 @media screen and (min-width: 1366px) {
     body.mployee-view .employee-details-main {
         padding: 0 50px;
     }
+}
+.border-none{
+    border: none !important;
+}
+.bg-none{
+    background: none !important;
+}
+.bg-light-gray{
+    background: var(--lightgray-color) !important;
 }

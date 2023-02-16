@@ -1,0 +1,56 @@
+:root {
+    --lightgray-color: #fbfbfb;
+}
+
+.color-black {
+    color: #000000 !important;
+}
+
+.bc_nav_profile .position {
+    font-size: 12px;
+    color: #959a9d;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+figcaption.mp-rounded {
+    background: #0099e8;
+}
+
+.navbar--module_titles a.active {
+    color: var(--white-color);
+}
+
+/* body.mployee-view */
+body.mployee-view {
+    background: #f2f5fa;
+}
+
+body.mployee-view .edm-title .form-group .form-control {
+    border-color: #000000;
+}
+
+body.mployee-view .edm-title .form-group>span.has-icon i.con {
+    color: #000000;
+}
+
+body.mployee-view .edm-container .accordion-group {
+    border: solid 1px #CDCDCD;
+}
+
+@media screen and (min-width: 1366px) {
+    body.mployee-view .employee-details-main {
+        padding: 0 50px;
+    }
+}
+.border-none{
+    border: none !important;
+}
+.bg-none{
+    background: none !important;
+}
+.bg-light-gray{
+    background: var(--lightgray-color) !important;
+}
