@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="398px" height="93px" viewBox="0 0 398 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MEET</title>
+    <defs>
+        <polygon id="path-1" points="0 0 22.88 0 48.49 72.67 48.75 72.67 73.71 0 96.33 0 96.33 92.82 80.86 92.82 80.86 21.19 80.6 21.19 54.86 92.82 41.47 92.82 15.73 21.19 15.47 21.19 15.47 92.82 0 92.82"></polygon>
+        <filter x="-2.1%" y="-2.2%" width="104.2%" height="104.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.248115166 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="132.83 0 199.65 0 199.65 14.04 149.08 14.04 149.08 38.35 195.88 38.35 195.88 51.61 149.08 51.61 149.08 78.78 200.56 78.78 200.56 92.82 132.83 92.82"></polygon>
+        <filter x="-3.0%" y="-2.2%" width="105.9%" height="104.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.248115166 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="231.73 0 298.55 0 298.55 14.04 247.98 14.04 247.98 38.35 294.78 38.35 294.78 51.61 247.98 51.61 247.98 78.78 299.46 78.78 299.46 92.82 231.73 92.82"></polygon>
+        <filter x="-3.0%" y="-2.2%" width="105.9%" height="104.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.248115166 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="321.79 0 396.93 0 396.93 14.04 367.42 14.04 367.42 92.82 351.17 92.82 351.17 14.04 321.79 14.04"></polygon>
+        <filter x="-2.7%" y="-2.2%" width="105.3%" height="104.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.248115166 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NotSelected-page" transform="translate(-723.000000, -422.000000)" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(713.000000, 388.000000)">
+                <g id="MEET" transform="translate(10.390000, 34.180000)">
+                    <g id="Path">
+                        <use fill="#D1D9E7" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Path">
+                        <use fill="#D1D9E7" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Path">
+                        <use fill="#D1D9E7" xlink:href="#path-5"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Path">
+                        <use fill="#D1D9E7" xlink:href="#path-7"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
