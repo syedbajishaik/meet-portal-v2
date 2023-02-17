@@ -21,7 +21,7 @@ html {
     font-weight: 600;
 }
 .bold-700, .font-weight-700 {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 .extra-bold-800, .font-weight-800 {
     font-weight: 800;
@@ -173,10 +173,10 @@ html {
     font-size: 0.875rem;
 }
 .font-16 {
-    font-size: 1rem;
+    font-size: 1rem !important;
 }
 .font-18 {
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
 }
 .font-20 {
     font-size: 1.25rem;

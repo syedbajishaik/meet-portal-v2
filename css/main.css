@@ -47,7 +47,7 @@
 
 .fontfam-hn-medium {
     font-family: var(--font-family-one);
-    font-weight: 500;
+    font-weight: 500 !important;
     font-style: normal;
 }
 
@@ -1287,4 +1287,7 @@ body.mployee-view .edm-container .accordion-group{
 }
 .bg-light-gray{
     background: var(--lightgray-color) !important;
+}
+.mp.font-weight-500{
+    font-weight: 500 !important;
 }
