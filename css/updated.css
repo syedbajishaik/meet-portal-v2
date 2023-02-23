@@ -23,24 +23,24 @@ figcaption.mp-rounded {
 :root {
     --lightgray-color: #fbfbfb;
 }
-body.mployee-view {
+.mployee-view {
     background: #f2f5fa;
 }
 
-body.mployee-view .edm-title .form-group .form-control {
+.mployee-view .edm-title .form-group .form-control {
     border-color: #000000;
 }
 
-body.mployee-view .edm-title .form-group>span.has-icon i.con {
+.mployee-view .edm-title .form-group>span.has-icon i.con {
     color: #000000;
 }
 
-body.mployee-view .edm-container .accordion-group {
+.mployee-view .edm-container .accordion-group {
     border: solid 1px #CDCDCD;
 }
 
 @media screen and (min-width: 1366px) {
-    body.mployee-view .employee-details-main {
+    .mployee-view .employee-details-main {
         padding: 0 50px;
     }
 }
@@ -58,4 +58,21 @@ body.mployee-view .edm-container .accordion-group {
 }
 .line-heigt-1p6{
     line-height: 1.6 !important;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
 }
