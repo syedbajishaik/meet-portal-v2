@@ -172,8 +172,7 @@
                             </div>
                             <div class="col-lg-3 p-0">
                                 <div class="form-group p-0 pr-3 m-lg-0">
-                                    <button type="button" 
-                                        class="d-block btn mp btn-primary btn-sm py-1 minht-38">
+                                    <button type="button" class="d-block btn mp btn-primary btn-sm py-1 minht-38">
                                         Current Month & Year
                                     </button>
                                 </div>
@@ -208,7 +207,7 @@
                                                 <label class="border-bottom d-block pb-3">Follow-ups</label>
                                                 <div class="Comments-List col-12 p-0">
                                                     <!-- Info: comment block -->
-                                                    <div class="inrow-comment mb-3">
+                                                    <div class="inrow-comment mb-3" data-toggle="modal" data-target="#myModal">
                                                         <div class="col-lg-10 p-0">
                                                             <p class="commentext p-0 m-0 line-limit only-lines-1">
                                                                 Neque porro quisquam est qui dolorem ipsum quia dolor
@@ -227,16 +226,16 @@
                                                             <p class="comment-author m-0 p-0">
                                                                 Girish Joshi
                                                             </p>
-                                                            <!-- Info: if user clicks on show-lessORmore "p.commentext" element (above) should toggle class "only-lines-1" -->
-                                                            <span class="show-lessORmore d-inline-block">
-                                                                <span>Show more</span>
-                                                                <i class="font-12 fa-regular fa-angles-down"></i>
+                                                            <!-- Info: If it is open "inopen" class, If it is closed "inclose" class must be added -->
+                                                            <span class="openclose-status inopen d-inline-block">
+                                                                <i class="fa-solid fa-circle font-12"></i>
+                                                                <span class="font-14">Open</span>
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <!-- Info: comment block END -->
                                                     <!-- Info: comment block -->
-                                                    <div class="inrow-comment mb-3">
+                                                    <div class="inrow-comment mb-3" data-toggle="modal" data-target="#managerViewModal">
                                                         <div class="col-lg-10 p-0">
                                                             <p class="commentext p-0 m-0 line-limit only-lines-1">
                                                                 Suspendisse blandit enim nibh, egestas tincidunt metus
@@ -254,9 +253,11 @@
                                                             <p class="comment-author m-0 p-0">
                                                                 Girish Joshi
                                                             </p>
-                                                            <span class="show-lessORmore d-inline-block"> <span>Show
-                                                                    more</span> <i
-                                                                    class="font-12 fa-regular fa-angles-down"></i></span>
+                                                            <!-- Info: If it is open "inopen" class, If it is closed "inclose" class must be added -->
+                                                            <span class="openclose-status inclose d-inline-block">
+                                                                <i class="fa-solid fa-circle font-12"></i>
+                                                                <span class="font-14">Close</span>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                     <!-- Info: comment block END -->
@@ -279,9 +280,11 @@
                                                             <p class="comment-author m-0 p-0">
                                                                 Girish Joshi
                                                             </p>
-                                                            <span class="show-lessORmore d-inline-block"> <span>Show
-                                                                    more</span> <i
-                                                                    class="font-12 fa-regular fa-angles-down"></i></span>
+                                                            <!-- Info: If it is open "inopen" class, If it is closed "inclose" class must be added -->
+                                                            <span class="openclose-status inopen d-inline-block">
+                                                                <i class="fa-solid fa-circle font-12"></i>
+                                                                <span class="font-14">Open</span>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                     <!-- Info: comment block END -->
@@ -357,7 +360,99 @@
         </div>
     </section>
     <!-- </main> -->
+    <!-- Info: The Modal -->
+    <div class="modal fade bd-example-modal-lg" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title color-heading1 fontfam-hn-bold font-18">Follow up task</h4>
+                    <button type="button" class="close opacity-1" data-dismiss="modal"><i class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="popupform-content col-lg-12 p-0">
+                        <div class="form-group">
+                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance Highlights</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Performance">quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Challenges Observed</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Challenges">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adi</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Help" class="fontfam-hn-medium font-16 color-black">Help Required</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Help">Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
+                        </div>
+                        <div class="form-group col-lg-4 p-0">
+                            <label for="Help" class="fontfam-hn-medium font-16 color-black">Schedule Meeting</label>
+                            <span class="has-icon">
+                                <input class="form-control" type="datetime-local" id="birthdaytime" name="birthdaytime">
+                                <i class="fa-solid fa-caret-down con"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right m-0">
+                        <span>
+                            <button type="button" class="btn mp btn-outline btn-sm mr-2">Discard</button>
+                            <button type="button" class="btn mp btn-primary btn-sm">Submit</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Info: The Modal END -->
+    <!-- Info: The Modal -->
+    <div class="modal fade bd-example-modal-lg" id="managerViewModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title color-heading1 fontfam-hn-bold font-18">Follow up task</h4>
+                    <button type="button" class="close opacity-1" data-dismiss="modal"><i class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="popupform-content col-lg-12 p-0">
+                        <div class="form-group">
+                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance Highlights</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Performance" disabled>quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Help" class="fontfam-hn-medium font-16 color-black">Help Required</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Help" disabled>Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager Comment</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Challenges"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right m-0">
+                        <span>
+                            <button type="button" class="btn mp btn-outline btn-sm mr-2">Discard</button>
+                            <button type="button" class="btn mp btn-primary btn-sm">Submit</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Info: The Modal END -->
     <!-- Scripts goes below -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

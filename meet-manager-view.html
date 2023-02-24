@@ -988,7 +988,55 @@
         </div>
     </section>
     <!-- </main> -->
+    <!-- Info: The Modal -->
+    <div class="modal fade bd-example-modal-lg" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title color-heading1 fontfam-hn-bold font-18">Follow up task</h4>
+                    <button type="button" class="close opacity-1" data-dismiss="modal"><i class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="popupform-content col-lg-12 p-0">
+                        <div class="form-group">
+                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance Highlights</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Performance">quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Challenges Observed</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Challenges">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adi</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Help" class="fontfam-hn-medium font-16 color-black">Help Required</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Help">Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
+                        </div>
+                        <div class="form-group col-lg-4 p-0">
+                            <span class="has-icon">
+                                <input class="form-control" type="datetime-local" id="birthdaytime" name="birthdaytime">
+                                <i class="fa-solid fa-caret-down con"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right my-3">
+                        <span>
+                            <button type="button" class="btn mp btn-outline btn-sm mr-2">Discard</button>
+                            <button type="button" class="btn mp btn-primary btn-sm">Submit</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Info: The Modal END -->
     <!-- Scripts goes below -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

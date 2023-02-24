@@ -1,14 +1,25 @@
+/*Info: secondary color variations from: https://coolors.co/009182-009f8f-00af9d-00c1ad-17c7b4-2cccbb-3fd1c1 */
 :root {
     --width: 400px;
     --topbar-section-height: 60px;
     --top-nav-height: 50px;
-    --color-head1: #00c1ad;
     --font-family-one: 'Helvetica Neue';
+    --font-family-HN: 'Helvetica Neue';
     --font-family-two: 'Neue Machina';
+    --font-family-NM: 'Neue Machina';
     --sidenav-width: 65px;
     --sub-sidenav-width: 400px;
     --primary-color: #000000;
     --secondary-color: #00c1ad;
+    --secondary-color-thin-light: #17C7B4;
+    --secondary-color-medium-light: #2CCCBB;
+    --secondary-color-heavy-light: #3FD1C1;
+    --secondary-color-thin-dark: #00AF9D;
+    --secondary-color-medium-dark: #009F8F;
+    --secondary-color-heavy-dark: #009182;
+    --green-color: #16C100;
+    --red-color: #E44700;
+    --color-head1: var(--secondary-color);
     --white-color: white;
     --list-hover-color: #f5f5f5;
     --border-color: #cacaca;
@@ -521,22 +532,26 @@ ul.bc_module_list>li a img {
     letter-spacing: 1.5px;
 }
 
-.search_employee_form-in-employee_list-in-aside .form-group input,
+.form-group input[type="text"],
+.form-group input[type="datetime-local"],
+.form-group input[type="date"],
 .form-group textarea,
-.search_employee_form-in-employee_list-in-aside .form-group select {
-    font-family: var(--font-family-one);
+.form-group select {
+    font-family: var(--font-family-HN);
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
     line-height: normal;
     letter-spacing: normal;
-    /* color: #c1c1c1; */
+    color: var(--primary-color);
     border-radius: 0px;
     border: solid 1px #c1c1c1;
 }
 
-.search_employee_form-in-employee_list-in-aside .form-group input,
-.search_employee_form-in-employee_list-in-aside .form-group select {
+.form-group input[type="text"],
+.form-group input[type="datetime-local"],
+.form-group input[type="date"],
+.form-group select {
     height: 41px;
 }
 
@@ -548,7 +563,7 @@ ul.bc_module_list>li a img {
     text-overflow: '';
 }
 
-.search_employee_form-in-employee_list-in-aside .form-group select::-ms-expand {
+.form-group select::-ms-expand {
     display: none;
 }
 
@@ -1182,7 +1197,7 @@ figcaption.mp-rounded {
 /* // No media query since the extra-large breakpoint has no upper bound on its width */
 
 .form-group textarea::placeholder,
-.form-group input::placeholder {
+.form-group input[type="text"]::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #c1c1c1;
     opacity: 1;
@@ -1190,13 +1205,13 @@ figcaption.mp-rounded {
 }
 
 .form-group textarea:-ms-input-placeholder,
-.form-group input:-ms-input-placeholder {
+.form-group input[type="text"]:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #c1c1c1;
 }
 
 .form-group textarea::-ms-input-placeholder,
-.form-group input::-ms-input-placeholder {
+.form-group input[type="text"]::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #c1c1c1;
 }
@@ -1310,4 +1325,65 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     right: 0;
     top: 0;
     width: auto;
+}
+
+/* Info: New Modifications from 23rd Feb */
+.color-red{
+    color: var(--red-color);
+}
+.opacity-1{
+    opacity: 1;
+}
+.openclose-status.inopen {
+    color: var(--green-color);
+}
+
+.openclose-status.inclose {
+    color: var(--red-color);
+}
+
+.form-control:disabled,
+.form-control.disabled,
+.form-control[readonly] {
+    background-color: #F3F3F3;
+    opacity: 1;
+    color: #8B8B8B !important;
+    cursor:not-allowed;
+}
+.mp.btn,
+.mp.btn.btn-sm{
+    font-family: var(--font-family-HN);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.mp.btn.btn-lg{
+    font-family: var(--font-family-HN);
+    font-size: 16px !important;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    line-height: 1.6 !important;
+    padding: 8px 16px;
+}
+.mp.btn.btn-primary {
+    color: #fff;
+    border: solid 1px #00c1ad;
+    background-color: #00c1ad;
+}
+.mp.btn.btn-outline {
+    color: #727272;
+    border: solid 1px #727272;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+        max-width: 650px;
+    }
 }
