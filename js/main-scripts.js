@@ -41,4 +41,5 @@ jQuery.noConflict();
             $('.bc_nav_profile--dropdown_btn').attr('aria-expanded', 'true') :
             $('.bc_nav_profile--dropdown_btn').attr('aria-expanded', 'false');
     });
+    $('[data-toggle="tooltip"]').tooltip();
 })(jQuery)

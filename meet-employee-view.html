@@ -98,7 +98,7 @@
                 <aside class="lc_main_aside js_main_aside bg-white">
                     <ul class="bc_module_list m-0 list-unstyled text-center px-2 py-3">
                         <li class="mb-4">
-                            <a href="#" class="active px-3 py-3">
+                            <a href="#" class="active px-3 py-3" data-toggle="tooltip" data-placement="right" title="Dashnboard">
                                 <img class="img-fluid" src="./images/icons/ic-er-dashboard.svg" alt="">
                                 <span class="pl-2 pt-1 font-14">Dashnboard</span>
                             </a>
@@ -170,7 +170,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 p-0">
+                            <div class="col-lg-8 d-flex p-0">
                                 <div class="form-group p-0 pr-3 m-lg-0">
                                     <button type="button" class="d-block btn mp btn-primary btn-sm py-1 minht-38">
                                         Current Month & Year
@@ -207,7 +207,8 @@
                                                 <label class="border-bottom d-block pb-3">Follow-ups</label>
                                                 <div class="Comments-List col-12 p-0">
                                                     <!-- Info: comment block -->
-                                                    <div class="inrow-comment mb-3" data-toggle="modal" data-target="#myModal">
+                                                    <div class="inrow-comment mb-3" data-toggle="modal"
+                                                        data-target="#myModal">
                                                         <div class="col-lg-10 p-0">
                                                             <p class="commentext p-0 m-0 line-limit only-lines-1">
                                                                 Neque porro quisquam est qui dolorem ipsum quia dolor
@@ -235,7 +236,8 @@
                                                     </div>
                                                     <!-- Info: comment block END -->
                                                     <!-- Info: comment block -->
-                                                    <div class="inrow-comment mb-3" data-toggle="modal" data-target="#managerViewModal">
+                                                    <div class="inrow-comment mb-3" data-toggle="modal"
+                                                        data-target="#managerViewModal">
                                                         <div class="col-lg-10 p-0">
                                                             <p class="commentext p-0 m-0 line-limit only-lines-1">
                                                                 Suspendisse blandit enim nibh, egestas tincidunt metus
@@ -368,23 +370,29 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title color-heading1 fontfam-hn-bold font-18">Follow up task</h4>
-                    <button type="button" class="close opacity-1" data-dismiss="modal"><i class="fa-regular fa-xmark color-red"></i></button>
+                    <button type="button" class="close opacity-1" data-dismiss="modal"><i
+                            class="fa-regular fa-xmark color-red"></i></button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="popupform-content col-lg-12 p-0">
                         <div class="form-group">
-                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance Highlights</label>
-                            <textarea class="form-control" rows="2" placeholder="Type here" id="Performance">quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
+                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance
+                                Highlights</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here"
+                                id="Performance">quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
                         </div>
                         <div class="form-group">
-                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Challenges Observed</label>
-                            <textarea class="form-control" rows="2" placeholder="Type here" id="Challenges">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adi</textarea>
+                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Challenges
+                                Observed</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here"
+                                id="Challenges">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adi</textarea>
                         </div>
                         <div class="form-group">
                             <label for="Help" class="fontfam-hn-medium font-16 color-black">Help Required</label>
-                            <textarea class="form-control" rows="2" placeholder="Type here" id="Help">Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
+                            <textarea class="form-control" rows="2" placeholder="Type here"
+                                id="Help">Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
                         </div>
                         <div class="form-group col-lg-4 p-0">
                             <label for="Help" class="fontfam-hn-medium font-16 color-black">Schedule Meeting</label>
@@ -418,24 +426,65 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title color-heading1 fontfam-hn-bold font-18">Follow up task</h4>
-                    <button type="button" class="close opacity-1" data-dismiss="modal"><i class="fa-regular fa-xmark color-red"></i></button>
+                    <button type="button" class="close opacity-1" data-dismiss="modal"><i
+                            class="fa-regular fa-xmark color-red"></i></button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="popupform-content col-lg-12 p-0">
                         <div class="form-group">
-                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance Highlights</label>
-                            <textarea class="form-control" rows="2" placeholder="Type here" id="Performance" disabled>quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
+                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance
+                                Highlights</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Performance"
+                                disabled>quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
                         </div>
                         <div class="form-group">
                             <label for="Help" class="fontfam-hn-medium font-16 color-black">Help Required</label>
-                            <textarea class="form-control" rows="2" placeholder="Type here" id="Help" disabled>Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Help"
+                                disabled>Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
                         </div>
                         <div class="form-group">
-                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager Comment</label>
+                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager
+                                Comment</label>
                             <textarea class="form-control" rows="2" placeholder="Type here" id="Challenges"></textarea>
                         </div>
+
+                        <div class="inrow-group col-lg-12 p-0">
+                            <div class="col-lg-4 pl-0">
+                                <div class="form-group m-0">
+                                    <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager
+                                        Comment</label>
+                                    <textarea class="form-control" rows="2" placeholder="Type here"
+                                        id="Challenges"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group m-0">
+                                    <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager
+                                        Comment</label>
+                                        <div class="inrow-group p-0 col-12">
+                                            <input class="form-control d-inline w-50" type="date" id="birthday" name="birthday">
+                                            <input class="form-control d-inline w-50" type="date" id="birthday" name="birthday">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 pr-0">
+                                <div class="form-group m-0">
+                                    <label for="Challenges" class="fontfam-hn-medium font-16 color-black">&nbsp;</label><br>
+                                    
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                        <span class="open_close">
+                                            <b class="opentxt">OPEN</b>
+                                            <b class="closetxt">CLOSE</b>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
