@@ -5,6 +5,7 @@ jQuery.noConflict();
     let searchEmpFormHt = $('.search_employee_form-in-employee_list-in-aside');
     let navigationSectionHt = $('.navigation-section');
     let edmTitleHt = $('.js_edm_title');
+    // $('.js_main_aside').css({'height': `calc(100vh - ${topBarSectionHt.outerHeight(true) + navigationSectionHt.outerHeight(true)}px)`})
     $('.lc_aside .emp-ulist').css({ 'height': `calc(100vh - ${topBarSectionHt.outerHeight(true) + titleHt.outerHeight(true) + searchEmpFormHt.outerHeight(true) + navigationSectionHt.outerHeight(true) + 16}px)` });
     $('.js_edm_container_height').css({ 'height': `calc(100vh - ${topBarSectionHt.outerHeight(true) + navigationSectionHt.outerHeight(true) + edmTitleHt.outerHeight(true)}px)` });
     $('.navbar--sidenav_toggle_btn').on('click', function () {
