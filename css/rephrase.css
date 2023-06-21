@@ -47,8 +47,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.3;
+    opacity: 0.2;
     border-radius: 60px;
+    flex-flow: column wrap;
 }
 
 .original-text-block .inrow-card-body{
