@@ -1,5 +1,5 @@
-jQuery.noConflict();
-(function ($) {
+// jQuery.noConflict();
+$(document).ready(function(){
     let topBarSectionHt = $('.js_top_bar_section');
     let titleHt = $('.bc_employee_list--title');
     let searchEmpFormHt = $('.search_employee_form-in-employee_list-in-aside');
@@ -43,4 +43,15 @@ jQuery.noConflict();
             $('.bc_nav_profile--dropdown_btn').attr('aria-expanded', 'false');
     });
     $('[data-toggle="tooltip"]').tooltip();
-})(jQuery)
+
+
+    $('.original-text-block textarea').on('keyup', function(event){
+        if($(this).val().length > 0){
+            console.log('text is typing')
+            $('.placeholder-block').hide();
+        }else{
+            console.log('no text detected..')
+            $('.placeholder-block').show();
+        }
+    })
+});
