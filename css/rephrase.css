@@ -81,6 +81,12 @@ button:focus
 .checkbox-type.active{
     background: rgba(128, 128, 128, 0.3) !important;
 }
+.form-group input[type="text"],
+.form-group input[type="datetime-local"],
+.form-group input[type="date"],
+.form-group select {
+    height: unset !important;
+}
 @media screen and (max-width: 576px) {
     .submit-text-block{
         align-items: center;
