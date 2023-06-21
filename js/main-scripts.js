@@ -53,5 +53,9 @@ $(document).ready(function(){
             console.log('no text detected..')
             $('.placeholder-block').show();
         }
+    });
+    $('.checkbox-type').on('click', function(){
+        $('.checkbox-type').removeClass('active');
+        $(this).addClass('active');
     })
 });

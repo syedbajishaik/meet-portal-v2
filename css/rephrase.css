@@ -64,12 +64,20 @@
 {
     outline: none;
 }
-.form-control:focus {
+.form-control:focus,
+button:focus
+{
     color: #495057;
     background-color: #ffffff;
     border-color: #ffffff;
-    outline: 0;
+    outline: none;
     box-shadow: 0 0 0 .2rem rgba(0,123,255, 0);
 }
-
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,0);
+}
+.checkbox-type.active{
+    background: rgba(128, 128, 128, 0.3) !important;
+}
 
