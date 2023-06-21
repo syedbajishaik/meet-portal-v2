@@ -80,4 +80,12 @@ button:focus
 .checkbox-type.active{
     background: rgba(128, 128, 128, 0.3) !important;
 }
-
+@media screen and (max-width: 576px) {
+    .submit-text-block{
+        align-items: center;
+        padding: 0 !important;
+    }
+    .submit-text-block button{
+        margin: 0 !important;
+    }
+}
